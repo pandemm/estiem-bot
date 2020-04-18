@@ -5,13 +5,6 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Cards\welcomeCard.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Cards\welcomeCard.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
