@@ -166,7 +166,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
             }
 
             // Restart the main dialog with a different message the second time around
-            var promptMessage = "What else can I do for you?";
+            var promptMessage = "What else can I do for you, Mr?";
             return await stepContext.ReplaceDialogAsync(InitialDialogId, promptMessage, cancellationToken);
         }
     }
