@@ -38,9 +38,9 @@ namespace Microsoft.BotBuilderSamples.Bots
         }
 
         // Load attachment from embedded resource.
-        private Attachment CreateAdaptiveCardAttachment()
+        public Attachment CreateAdaptiveCardAttachment()
         {
-            var cardResourcePath = "CoreBot.Cards.welcomeCard.json";
+            var cardResourcePath = "coreBot.cards.welcomeCard.json";
 
             using (var stream = GetType().Assembly.GetManifestResourceStream(cardResourcePath))
             {
