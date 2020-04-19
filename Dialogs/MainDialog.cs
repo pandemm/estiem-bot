@@ -42,9 +42,9 @@ namespace Microsoft.BotBuilderSamples.Dialogs
         }
         public Attachment CreateAdaptiveCardAttachment()
         {
-            var cardResourcePath = "coreBot.cards.welcomeCard.json";
+            var cardResourcePath = "Cards\\welcomeCard.json";
 
-            using (var stream = GetType().Assembly.GetManifestResourceStream(cardResourcePath))
+            using (var stream = File.OpenRead(cardResourcePath))
             {
                 using (var reader = new StreamReader(stream))
                 {
